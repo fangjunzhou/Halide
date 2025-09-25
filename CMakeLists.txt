@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.28)
 
+# Enable compile_commands.json
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 # TODO: remove this after updating build bots.
 if (CMAKE_TOOLCHAIN_FILE MATCHES "vcpkg")
     if (NOT DEFINED VCPKG_OVERLAY_PORTS)
